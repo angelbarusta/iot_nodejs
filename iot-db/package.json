@@ -4,7 +4,7 @@
   "description": "prueba de una plataforma iot - DB module",
   "main": "index.js",
   "scripts": {
-     "lint": "standard --fix"
+    "lint": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/angelbarusta/iot_nodejs/issues"
   },
-  "homepage": "https://github.com/angelbarusta/iot_nodejs#readme"
+  "homepage": "https://github.com/angelbarusta/iot_nodejs#readme",
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
 }
