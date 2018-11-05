@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/angelbarusta/iot_nodejs/issues"
   },
-  "homepage": "https://github.com/angelbarusta/iot_nodejs#readme"
+  "homepage": "https://github.com/angelbarusta/iot_nodejs#readme",
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
 }
