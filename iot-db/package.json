@@ -4,7 +4,7 @@
   "description": "prueba de una plataforma iot - DB module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard --fix"
   },
   "repository": {
     "type": "git",
