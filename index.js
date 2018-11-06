@@ -15,9 +15,13 @@ module.exports = async function (config) {
     MetricModel.belongsTo(AgentModel)
 // espera hasta que si se conecte adecuadamente
    await sequelize.authenticate()
-
 // configuracion de la base de datos
-   sequelize.sync()
+   if (config.setup) {
+       await sequelize.sync({ force: true })// si la db existe borrara la db nueva
+   }
+
+
+
 
 
 
