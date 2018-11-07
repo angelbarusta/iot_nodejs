@@ -1,7 +1,7 @@
 'use strict'
 
 const debug = require('debug')('iot_nodejs:db:setup')
-const db = require('../lib/db')
+const db = require('./lib/db')
 
 async function setup () {
   const config = {
