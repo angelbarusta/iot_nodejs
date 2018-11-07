@@ -4,6 +4,7 @@
   "description": "prueba de una plataforma iot - DB module",
   "main": "index.js",
   "scripts": {
+    "test": "SET DEBUG=iot_nodejs:* && ava tests/ --verbose",
     "setup": "SET DEBUG=iot_nodejs:* && node setup.js",
     "lint": "standard --fix"
   },
@@ -18,10 +19,15 @@
   },
   "homepage": "https://github.com/angelbarusta/iot_nodejs#readme",
   "devDependencies": {
+    "ava": "^0.25.0",
+    "sqlite3": "^4.0.3",
     "standard": "^12.0.1"
   },
   "dependencies": {
+    "chalk": "^2.4.1",
     "debug": "^4.1.0",
+    "defaults": "^1.0.3",
+    "inquirer": "^6.2.0",
     "pg": "^7.6.0",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.41.1"
