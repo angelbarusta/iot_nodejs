@@ -8,7 +8,7 @@ const db = require('./')
 const prompt = inquirer.createPromptModule()
 
 async function setup () {
-  //Realizacion de la pregunta previa que solicita permiso para continuar
+  // Realizacion de la pregunta previa que solicita permiso para continuar
   const answer = await prompt([
     {
       type: 'confirm',
@@ -17,10 +17,9 @@ async function setup () {
     }
   ])
 
-  if (!answer.setup){// si la pregunta es contestada como falsa
+  if (!answer.setup) { // si la pregunta es contestada como falsa
     return console.log('No pasa nada :) i love you bb')
   }
-
 
   const config = {
     database: process.env.DB_NAME || 'az_movil', // aqui se cambia por el nombre de la base de datos que le quieras poner

@@ -27,4 +27,3 @@ describe('Connection strings', function () {
     })
   })
 })
-
