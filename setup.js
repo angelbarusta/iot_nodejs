@@ -17,7 +17,7 @@ async function setup () {
   ])
 
   if (!answer.setup){// si la pregunta es contestada como falsa
-    return console.log('No pasa nada :)')
+    return console.log('No pasa nada :) i love you bb')
   }
 
 
