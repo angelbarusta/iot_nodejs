@@ -1,0 +1,29 @@
+{
+  "name": "iot-db",
+  "version": "1.0.0",
+  "description": "prueba de una plataforma iot - DB module",
+  "main": "index.js",
+  "scripts": {
+    "setup": "SET DEBUG=iot_nodejs:* && node setup.js",
+    "lint": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelbarusta/iot_nodejs.git"
+  },
+  "author": "Angel Barusta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angelbarusta/iot_nodejs/issues"
+  },
+  "homepage": "https://github.com/angelbarusta/iot_nodejs#readme",
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "debug": "^4.1.0",
+    "pg": "^7.6.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.41.1"
+  }
+}
