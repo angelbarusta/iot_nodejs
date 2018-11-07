@@ -1,7 +1,8 @@
 'use strict'
 
 const debug = require('debug')('iot_nodejs:db:setup')
-const db = require('./')
+const db = require('../lib/db')
+
 
 async function setup () {
   const config = {
@@ -11,7 +12,8 @@ async function setup () {
     host: process.env.DB_HOST || 'localhost',
     dialect: 'postgres',
     logging: s => debug(s),
-    setup: true
+    setup: true,
+   
   }
 
   await db(config).catch(handleFatalError)
