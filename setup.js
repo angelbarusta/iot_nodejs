@@ -1,13 +1,13 @@
 'use strict'
 
 const debug = require('debug')('iot_nodejs:db:setup')
-const db = require('./lib/db')
+const db = require('./')
 
 async function setup () {
   const config = {
-    database: process.env.DB_NAME || 'iot_nodejs',
-    username: process.env.DB_USER || 'IOT_NODEJS',
-    password: process.env.DB_PASS || 'IOT_NODEJS',
+    database: process.env.DB_NAME || 'az_movil',
+    username: process.env.DB_USER || 'iot',
+    password: process.env.DB_PASS || '123456789',
     host: process.env.DB_HOST || 'localhost',
     dialect: 'postgres',
     logging: s => debug(s),
