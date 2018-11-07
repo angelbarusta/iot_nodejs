@@ -37,8 +37,8 @@ host    all             all             ***.*.*.****            password
 host    all             all             0.0.0.0/0               password
 # IPv6 local connections:
 host    all             all             ::1/128                 password
+```
 utilizando "brew services restart postgresql"
 
 #Una vez hecho lo anterior
 introducir en la terminal "psql -U NAME_USER NAME_DB"
-```
