@@ -42,3 +42,12 @@ utilizando "brew services restart postgresql"
 
 #Una vez hecho lo anterior
 introducir en la terminal "psql -U NAME_USER NAME_DB"
+
+## implementacion de chalk para mensajes de error
+```js
+function handleFatalError (err) {
+  console.error(`${chalk.red('[Error fatal]')} ${err.message}`)// aqui se elige el color del chalk, en este caso RED
+  console.error(err.stack)
+  process.exit(1)
+}
+```
