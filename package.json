@@ -4,7 +4,7 @@
   "description": "prueba de una plataforma iot - DB module",
   "main": "index.js",
   "scripts": {
-    "test": "SET DEBUG=iot_nodejs:* && ava tests/ --verbose",
+    "test": "SET DEBUG=iot_nodejs:* &&  nyc ava tests/ --verbose",
     "setup": "SET DEBUG=iot_nodejs:* && node setup.js",
     "lint": "standard --fix"
   },
