@@ -62,5 +62,7 @@ en terminal agregar "npm i --save defaults"
   "test": "SET DEBUG=iot_nodejs:* &&  nyc ava tests/ --verbose"
   ```
   ## haciendo mocks con generacion de stubs con sinon
+  instalamos la libreria sinon "npm install --save-dev sinon"
+  "npm i proxyquire --save-dev"
 
 
