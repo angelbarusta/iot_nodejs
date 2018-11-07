@@ -25,6 +25,7 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "debug": "^4.1.0",
+    "defaults": "^1.0.3",
     "inquirer": "^6.2.0",
     "pg": "^7.6.0",
     "pg-hstore": "^2.3.2",
