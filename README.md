@@ -51,3 +51,6 @@ function handleFatalError (err) {
   process.exit(1)
 }
 ```
+## instalacion de ava para tests
+en terminal agregar "npm i --save defaults"
+
