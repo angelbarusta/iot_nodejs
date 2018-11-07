@@ -53,12 +53,14 @@ function handleFatalError (err) {
 ```
 ## instalacion de ava para tests
 en terminal agregar "npm i --save defaults"
-## Si se quiere reporte en coverage
+## Si se quiere reporte en coverage modificar en json
 ```js
  "nyc": "SET DEBUG=iot_nodejs:* &&  nyc --reporter=lcov ava tests/ --verbose"
  ```
- ##Si solo se quiere ver en terminal
+ ##Si solo se quiere ver en terminal modificar en json
  ```js
   "test": "SET DEBUG=iot_nodejs:* &&  nyc ava tests/ --verbose"
   ```
+  ## haciendo mocks con generacion de stubs con sinon
+
 
