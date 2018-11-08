@@ -1,1 +1,1 @@
-module.exports = require('./lib/node-progress');
+module.exports = require('./lib/node-progress')
