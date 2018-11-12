@@ -27,6 +27,10 @@ test.beforeEach(async () => {
     hasMany: sandbox.spy()
   }
 
+  //Modelo findById Stub
+  AgentStub.findById = sandbox.stub()
+  AgentStub.findById.withArgs(id).returns(Promise.resolve(agentFixtures.byId(id)))
+
   const setupDatabase = proxyquire('../', {
     './models/agent': () => AgentStub, // las mismas rutas que las que estan e declaradas en index.js
     './models/metric': () => MetricStub
