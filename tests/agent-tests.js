@@ -56,5 +56,9 @@ test.serial('Setup', t => {
 test.serial('Agent#findById', async t => {
   let agent = await db.Agent.findById(id)
 
+  t.true(AgentStub.findById.called, 'findById debera llamar al modelo')
+  t.true(AgentStub.findById.calledOnce, 'findById debera ser llamada una vez')
+  t.true(AgentStub.findById.calledWith(id), 'findById debera llamar con los argumentos que son')
+
   t.deepEqual(agent, agentFixtures.byId(id), 'deberia ser el mismo')
 })
