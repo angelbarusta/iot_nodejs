@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/angelbarusta/iot_nodejs#readme",
   "devDependencies": {
-    "ava": "^0.25.0",
+    "ava": "^5.1.0",
     "nyc": "^13.1.0",
     "proxyquire": "^2.1.0",
     "sinon": "^7.1.1",
